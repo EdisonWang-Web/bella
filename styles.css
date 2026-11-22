@@ -186,3 +186,50 @@ dialog video { max-height: 72dvh; max-width: 100%; width: auto; margin: auto; ba
 /* Keep the animation covers in their original frame proportions. */
 .work-landscape .work-image { aspect-ratio: 16 / 9; }
 .work-portrait .work-image { aspect-ratio: 9 / 16; }
+
+/* Full-width coastal portrait behind Bella's introduction. */
+.hero-photo {
+  background-color: #514b45;
+  background-image: linear-gradient(90deg, rgb(20 19 23 / 64%) 0%, rgb(20 19 23 / 43%) 42%, rgb(20 19 23 / 15%) 100%), url('bella-coast.png');
+  background-size: cover;
+  background-position: center 48%;
+  color: #fffaf6;
+}
+.hero.hero-photo { display: flex; align-items: center; min-height: 660px; padding-block: 70px; }
+.hero-inner { position: relative; }
+.hero-photo .eyebrow, .hero-photo h1 span { color: #f5d4dc; }
+.hero-photo .hero-copy, .hero-photo .resume-subtitle { color: #fff4ee; }
+.hero-photo .hero-copy { max-width: 400px; }
+.hero-photo h1, .hero-photo h2, .hero-photo p { text-shadow: 0 2px 18px rgb(0 0 0 / 20%); }
+.hero-photo .text-link { color: #fffaf6; border-color: #f5d4dc; }
+.hero-photo .text-link:hover { color: #f5d4dc; }
+.hero-photo .button { background: #f4dedf; color: #392a2e; border-color: #f4dedf; }
+.hero-photo .button:hover { background: white; }
+.hero-photo a:focus-visible, .hero-photo button:focus-visible { outline-color: #fff; }
+.resume-intro.hero-photo { width: 100vw; margin-left: calc(50% - 50vw); padding: 70px max(44px, calc((100vw - 1180px) / 2)); min-height: 410px; margin-bottom: 40px; background-position: center 45%; }
+@media (max-width: 950px) {
+  .resume-intro.hero-photo { padding-inline: 28px; }
+}
+@media (max-width: 620px) {
+  .hero.hero-photo { min-height: 700px; padding-block: 52px; align-items: flex-end; }
+  .hero-photo { background-position: 64% center; background-image: linear-gradient(180deg, rgb(20 19 23 / 12%), rgb(20 19 23 / 48%) 42%, rgb(20 19 23 / 78%) 100%), url('bella-coast.png'); }
+  .hero-photo .hero-copy { max-width: 340px; }
+  .resume-intro.hero-photo { padding: 130px 20px 36px; min-height: 440px; background-position: 64% center; margin-bottom: 24px; }
+}
+@media print {
+  .resume-intro.hero-photo { background: none; color: #30242a; width: auto; margin: 0; padding: 0 0 20px; min-height: 0; }
+  .resume-intro.hero-photo .eyebrow, .resume-intro.hero-photo h1 span { color: var(--rose); }
+  .resume-intro.hero-photo .resume-subtitle { color: var(--muted); }
+  .resume-intro.hero-photo h1, .resume-intro.hero-photo p { text-shadow: none; }
+}
+
+/* Keep the full-width banner inside the viewport, including scrollbars. */
+.resume-intro.hero-photo { display: block; width: auto; margin-inline: 0; padding: 70px 0; }
+.resume-intro-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
+@media (max-width: 620px) {
+  .resume-intro.hero-photo { padding: 130px 0 36px; }
+  .resume-intro-inner { display: block; }
+}
+@media print {
+  .resume-intro.hero-photo { padding: 0 0 20px; }
+}
