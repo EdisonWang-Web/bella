@@ -321,40 +321,55 @@ body { background: var(--paper); color: #fff; }
   .profile-section p { color: #30242a; }
 }
 
-/* The portfolio uses a pale pink and black palette; resume keeps its rose card. */
-.portfolio-page {
+/* Shared pale pink and black palette for portfolio and resume. */
+:is(.portfolio-page, .resume-page) {
   --paper: #fbeaf0; --blush: #f8e2ea; --ink: #171316; --muted: #171316;
   --rose: #171316; --rose-dark: #171316; --line: #d9b8c6;
   background: #fbeaf0; color: #171316;
 }
-.portfolio-page .site-header { background: rgb(251 234 240 / 97%); }
-.portfolio-page .hero-photo {
+:is(.portfolio-page, .resume-page) .site-header { background: rgb(251 234 240 / 97%); }
+:is(.portfolio-page, .resume-page) .hero-photo {
   background-color: #fbeaf0;
   background-image: linear-gradient(90deg, rgb(251 234 240 / 90%) 0%, rgb(251 234 240 / 65%) 43%, rgb(251 234 240 / 16%) 100%), url('bella-coast.png');
   color: #171316;
 }
-.portfolio-page .wordmark span, .portfolio-page .hero h1 span,
-.portfolio-page .hero-photo .eyebrow, .portfolio-page .hero-photo .hero-copy,
-.portfolio-page .hero-photo .text-link, .portfolio-page .about-heading em,
-.portfolio-page .expertise-item p, .portfolio-page .filter { color: #171316; }
-.portfolio-page .hero-photo h1, .portfolio-page .hero-photo h2, .portfolio-page .hero-photo p { text-shadow: none; }
-.portfolio-page .hero-photo .outline-button,
-.portfolio-page .hero-photo .outline-button:hover,
-.portfolio-page .hero-photo .outline-button:active { color: #171316; border-color: #171316; background: transparent; }
-.portfolio-page .hero-photo a:focus-visible, .portfolio-page .hero-photo button:focus-visible { outline-color: #171316; }
-.portfolio-page .section-head .eyebrow::before { background: #171316; box-shadow: none; }
-.portfolio-page .filter[aria-pressed="true"] { background: #eed0dd; border-color: #171316; color: #171316; box-shadow: none; }
-.portfolio-page .play-label { background: rgb(251 234 240 / 96%); color: #171316; border-color: #d9b8c6; }
-.portfolio-page .work-image { background: #efd2de; }
-.portfolio-page .skip-link { background: #fbeaf0; color: #171316; }
-.portfolio-page ::selection { background: #e5b5c9; color: #171316; }
+:is(.portfolio-page, .resume-page) .wordmark span, :is(.portfolio-page, .resume-page) .hero h1 span,
+:is(.portfolio-page, .resume-page) .hero-photo .eyebrow, :is(.portfolio-page, .resume-page) .hero-photo .hero-copy,
+:is(.portfolio-page, .resume-page) .hero-photo .text-link, :is(.portfolio-page, .resume-page) .about-heading em,
+:is(.portfolio-page, .resume-page) .expertise-item p, :is(.portfolio-page, .resume-page) .filter { color: #171316; }
+:is(.portfolio-page, .resume-page) .hero-photo h1, :is(.portfolio-page, .resume-page) .hero-photo h2, :is(.portfolio-page, .resume-page) .hero-photo p { text-shadow: none; }
+:is(.portfolio-page, .resume-page) .hero-photo .outline-button,
+:is(.portfolio-page, .resume-page) .hero-photo .outline-button:hover,
+:is(.portfolio-page, .resume-page) .hero-photo .outline-button:active { color: #171316; border-color: #171316; background: transparent; }
+:is(.portfolio-page, .resume-page) .hero-photo a:focus-visible, :is(.portfolio-page, .resume-page) .hero-photo button:focus-visible { outline-color: #171316; }
+:is(.portfolio-page, .resume-page) .section-head .eyebrow::before { background: #171316; box-shadow: none; }
+:is(.portfolio-page, .resume-page) .filter[aria-pressed="true"] { background: #eed0dd; border-color: #171316; color: #171316; box-shadow: none; }
+:is(.portfolio-page, .resume-page) .play-label { background: rgb(251 234 240 / 96%); color: #171316; border-color: #d9b8c6; }
+:is(.portfolio-page, .resume-page) .work-image { background: #efd2de; }
+:is(.portfolio-page, .resume-page) .skip-link { background: #fbeaf0; color: #171316; }
+:is(.portfolio-page, .resume-page) ::selection { background: #e5b5c9; color: #171316; }
 .toolkit-section .tools { margin: 10px 0 0; }
 .toolkit-section .tools li { overflow-wrap: anywhere; }
 @media (max-width: 620px) {
-  .portfolio-page .hero-photo { background-image: linear-gradient(180deg, rgb(251 234 240 / 18%) 0%, rgb(251 234 240 / 70%) 38%, rgb(251 234 240 / 96%) 100%), url('bella-coast.png'); }
+  :is(.portfolio-page, .resume-page) .hero-photo { background-image: linear-gradient(180deg, rgb(251 234 240 / 18%) 0%, rgb(251 234 240 / 70%) 38%, rgb(251 234 240 / 96%) 100%), url('bella-coast.png'); }
 }
 @media print {
   .toolkit-section { break-inside: avoid; }
   .toolkit-section .tools { gap: 4px 7px; margin-top: 5px; }
   .toolkit-section .tools li { background: #f9eef3; color: #30242a; border-color: #dfcdd0; padding: 3px 7px; }
+}
+
+/* Carry the same palette through the complete resume, including print. */
+.resume-page .resume-body { background: #fbeaf0; }
+.resume-page .profile-section,
+.resume-page .profile-section h2,
+.resume-page .profile-section p,
+.resume-page .hero-photo h1 span,
+.resume-page .hero-photo .resume-subtitle { color: #171316; }
+.resume-page .tools li { background: #f8e2ea; color: #171316; border-color: #d9b8c6; }
+.resume-page .print-button,
+.resume-page .print-button:hover { background: transparent; color: #171316; border: 1px solid #171316; border-radius: 0; box-shadow: none; }
+@media print {
+  .resume-page .resume-intro.hero-photo { background: none; color: #171316; }
+  .resume-page .toolkit-section .tools li { background: #f8e2ea; color: #171316; }
 }
