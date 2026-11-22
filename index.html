@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf6">
+  <title>Haley｜AI 動畫生成・影像創作作品集</title>
+  <meta name="description" content="Haley 的 AI 動畫生成與影像創作作品集。角色與場景設計、分鏡、動態生成及後期整合，讓想像成為有情緒的影像。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳至主要內容</a>
+<header class="site-header">
+  <nav class="nav shell" aria-label="主要導覽">
+    <a class="wordmark" href="index.html" aria-label="Haley 首頁">Haley<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html#works" aria-current="page">作品集</a>
+      <a href="index.html#about">關於</a>
+      <a href="resume.html">履歷</a>
+    </div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero shell" aria-labelledby="hero-name">
+    <div>
+      <p class="eyebrow">AI animation &amp; visual storytelling</p>
+      <h1 id="hero-name">Haley<span>.</span></h1>
+      <h2>讓想像，<br>成為有情緒的影像。</h2>
+      <p class="hero-copy">從一個畫面、一段故事開始。以 AI 動畫生成、角色設計與鏡頭語言，讓腦海裡的世界，慢慢動起來。</p>
+      <div class="actions"><a class="button" href="#works">探索作品</a><a class="text-link" href="resume.html">閱讀履歷</a></div>
+    </div>
+    <div class="motion-panel" aria-hidden="true">
+      <p class="motion-copy">Imagination,<br><em>in motion.</em></p>
+      <div class="disc"></div>
+      <p class="panel-footnote">A story begins with a frame.</p>
+    </div>
+  </section>
+  <div class="shell practice-bar" aria-label="創作領域"><span>AI 動畫生成</span><span>角色與場景設計</span><span>短劇與品牌影像</span><span>剪輯與後期整合</span></div>
+  <section id="works" class="section shell" aria-labelledby="works-title">
+    <div class="section-head">
+      <div><p class="eyebrow">Selected work</p><h2 id="works-title">把故事，放進畫面裡。</h2></div>
+      <p class="section-note">在角色、情緒與節奏之間，探索 AI 影像的敘事可能。</p>
+    </div>
+    <div class="filter-list" role="group" aria-label="作品分類">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">全部作品</button>
+      <button class="filter" type="button" data-filter="story" aria-pressed="false">劇情短片</button>
+      <button class="filter" type="button" data-filter="brand" aria-pressed="false">品牌與風格</button>
+    </div>
+    <div class="works-grid">
+      <article class="work" data-category="story">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 工地周轉" data-video="construction.mp4" data-title="工地周轉" data-description="從角色關係與生活場景出發，以對話和鏡頭銜接推進故事。">
+          <div class="work-image"><img src="construction.webp" alt="工地周轉影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>劇情短片</span><span>1:05</span></div>
+          <h3>工地周轉</h3>
+        </button>
+        <p class="work-description">從角色關係與生活場景出發，以對話和鏡頭銜接推進故事。</p>
+      </article>
+      <article class="work" data-category="brand">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 台灣版 GTA" data-video="taiwan-gta.mp4" data-title="台灣版 GTA" data-description="結合台灣街景、汽車動態與快速剪接，探索遊戲感的影像敘事。">
+          <div class="work-image"><img src="taiwan-gta.webp" alt="台灣版 GTA影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>風格影像</span><span>0:38</span></div>
+          <h3>台灣版 GTA</h3>
+        </button>
+        <p class="work-description">結合台灣街景、汽車動態與快速剪接，探索遊戲感的影像敘事。</p>
+      </article>
+      <article class="work" data-category="brand">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 企業週轉" data-video="business-credit.mp4" data-title="企業週轉" data-description="將企業情境轉化為短篇敘事，串連角色、事件與資訊節奏。">
+          <div class="work-image"><img src="business-credit.webp" alt="企業週轉影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>情境廣告</span><span>0:41</span></div>
+          <h3>企業週轉</h3>
+        </button>
+        <p class="work-description">將企業情境轉化為短篇敘事，串連角色、事件與資訊節奏。</p>
+      </article>
+      <article class="work" data-category="story">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 自營商花店" data-video="florist.mp4" data-title="自營商花店" data-description="以花店為場景，透過人物表情、生活細節與光影建立情緒。">
+          <div class="work-image"><img src="florist.webp" alt="自營商花店影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>劇情短片</span><span>0:35</span></div>
+          <h3>自營商花店</h3>
+        </button>
+        <p class="work-description">以花店為場景，透過人物表情、生活細節與光影建立情緒。</p>
+      </article>
+      <article class="work" data-category="story">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 劇情片段｜第一級916" data-video="episode-916.mp4" data-title="劇情片段｜第一級916" data-description="以空間、特寫與角色反應組接，營造短篇故事的情緒張力。">
+          <div class="work-image"><img src="episode-916.webp" alt="劇情片段｜第一級916影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>情緒敘事</span><span>0:20</span></div>
+          <h3>劇情片段｜第一級916</h3>
+        </button>
+        <p class="work-description">以空間、特寫與角色反應組接，營造短篇故事的情緒張力。</p>
+      </article>
+      <article class="work" data-category="story">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 年代短劇｜第一集" data-video="episode-one.mp4" data-title="年代短劇｜第一集" data-description="在台灣街景與年代氛圍中，以角色、場景與鏡頭建立敘事。">
+          <div class="work-image"><img src="episode-one.webp" alt="年代短劇｜第一集影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>年代敘事</span><span>0:45</span></div>
+          <h3>年代短劇｜第一集</h3>
+        </button>
+        <p class="work-description">在台灣街景與年代氛圍中，以角色、場景與鏡頭建立敘事。</p>
+      </article>
+    </div>
+  </section>
+  <section id="about" class="about-section" aria-labelledby="about-title">
+    <div class="shell about-grid">
+      <div>
+        <p class="eyebrow">About Haley</p>
+        <h2 id="about-title" class="about-heading">A little idea.<br><em>A living story.</em></h2>
+        <p>我是 Haley，專注 AI 動畫生成與影像敘事。從腳本、分鏡到角色與場景設定，再把生成的畫面串連成完整短片。</p>
+        <p>關注的不只是單一畫面的精緻度，也包含角色在不同鏡頭中的一致性、動作的自然程度，以及整部作品的情緒與節奏。</p>
+        <a class="text-link" href="resume.html">了解製作能力與工具</a>
+      </div>
+      <div class="expertise">
+        <div class="expertise-item"><h3>從故事到分鏡</h3><p>梳理內容方向與敘事重點，安排鏡頭、動作、情緒和場景之間的關係。</p></div>
+        <div class="expertise-item"><h3>從設定到生成</h3><p>建立角色外觀、場景氛圍與視覺風格，透過提示詞及參考素材迭代影像。</p></div>
+        <div class="expertise-item"><h3>從素材到成片</h3><p>整合動畫片段、聲音、字幕與剪輯節奏，完成適合觀看情境的影片。</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<dialog id="work-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+  <div class="dialog-header"><h2 id="dialog-title"></h2><button class="close-dialog" type="button" aria-label="關閉影片">關閉</button></div>
+  <video controls playsinline preload="metadata"></video>
+  <p id="dialog-description" class="dialog-description"></p>
+  <p class="video-error" role="alert" hidden>影片暫時無法載入，請稍後再試，或<a href="#">直接開啟影片</a>。</p>
+</dialog>
+<footer class="site-footer">
+  <div class="shell footer-content">
+    <div><a class="wordmark" href="index.html">Haley<span>.</span></a><p class="footer-note">AI animation &amp; visual storytelling</p></div>
+    <div class="footer-links"><a href="index.html#works">作品集</a><a href="resume.html">HTML 履歷</a><a href="#main">回到頂端</a></div>
+  </div>
+</footer>
+</body>
+</html>
