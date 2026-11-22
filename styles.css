@@ -309,18 +309,13 @@ body { background: var(--paper); color: #fff; }
 @media (max-width: 620px) { .actions { gap: 16px; } }
 @media (prefers-reduced-motion: reduce) { .hero-photo .outline-button { transition: none; } }
 
-/* A deeper rose panel highlights the personal introduction. */
-.profile-section {
-  background: #864357;
-  border: 1px solid #b7798d;
-  padding: 28px;
-  margin-top: 28px;
-  margin-bottom: 8px;
-  color: #fff;
-}
+/* One continuous rose surface for the complete resume content. */
+.resume-body { background: #864357; }
+.profile-section { background: transparent; border: 0; border-bottom: 1px solid var(--line); padding: 36px 0; margin: 0; color: #fff; }
 .profile-section h2, .profile-section p { color: #fff; }
-@media (max-width: 620px) { .profile-section { padding: 22px 18px; margin-top: 20px; } }
+@media (max-width: 620px) { .profile-section { padding: 28px 0; } }
 @media print {
+  .resume-body { background: white; }
   .profile-section { background: transparent; color: #30242a; padding: 17px 0; margin: 0; border: 0; border-bottom: 1px solid var(--line); }
   .profile-section h2 { color: #773147; }
   .profile-section p { color: #30242a; }
