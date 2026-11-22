@@ -182,3 +182,7 @@ dialog video { max-height: 72dvh; max-width: 100%; width: auto; margin: auto; ba
   .tools li { font-size: 8.5pt; }
   .tools { margin-bottom: 8px; }
 }
+
+/* Keep the animation covers in their original frame proportions. */
+.work-landscape .work-image { aspect-ratio: 16 / 9; }
+.work-portrait .work-image { aspect-ratio: 9 / 16; }

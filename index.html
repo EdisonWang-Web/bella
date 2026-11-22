@@ -8,7 +8,7 @@
   <meta name="description" content="Haley 的 AI 動畫生成與影像創作作品集。角色與場景設計、分鏡、動態生成及後期整合，讓想像成為有情緒的影像。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=animations-20261122">
   <script src="site.js" defer></script>
 </head>
 <body>
@@ -46,57 +46,65 @@
     </div>
     <div class="filter-list" role="group" aria-label="作品分類">
       <button class="filter" type="button" data-filter="all" aria-pressed="true">全部作品</button>
-      <button class="filter" type="button" data-filter="story" aria-pressed="false">劇情短片</button>
-      <button class="filter" type="button" data-filter="brand" aria-pressed="false">品牌與風格</button>
+      <button class="filter" type="button" data-filter="period" aria-pressed="false">年代劇情</button>
+      <button class="filter" type="button" data-filter="character" aria-pressed="false">人物短片</button>
     </div>
     <div class="works-grid">
-      <article class="work" data-category="story">
-        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 工地周轉" data-video="construction.mp4" data-title="工地周轉" data-description="從角色關係與生活場景出發，以對話和鏡頭銜接推進故事。">
-          <div class="work-image"><img src="construction.webp" alt="工地周轉影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
-          <div class="work-meta"><span>劇情短片</span><span>1:05</span></div>
-          <h3>工地周轉</h3>
+      <article class="work work-landscape" data-category="period">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 年代敘事｜夜色與追逐" data-video="animation-02.mp4" data-title="年代敘事｜夜色與追逐" data-description="從人物交談、飯店夜景到街頭追逐，串連年代氛圍中的故事。">
+          <div class="work-image"><img src="animation-02.webp" alt="年代敘事｜夜色與追逐影片畫面" loading="lazy" width="1280" height="720"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>年代劇情</span><span>2:12</span></div>
+          <h3>年代敘事｜夜色與追逐</h3>
         </button>
-        <p class="work-description">從角色關係與生活場景出發，以對話和鏡頭銜接推進故事。</p>
+        <p class="work-description">從人物交談、飯店夜景到街頭追逐，串連年代氛圍中的故事。</p>
       </article>
-      <article class="work" data-category="brand">
-        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 台灣版 GTA" data-video="taiwan-gta.mp4" data-title="台灣版 GTA" data-description="結合台灣街景、汽車動態與快速剪接，探索遊戲感的影像敘事。">
-          <div class="work-image"><img src="taiwan-gta.webp" alt="台灣版 GTA影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
-          <div class="work-meta"><span>風格影像</span><span>0:38</span></div>
-          <h3>台灣版 GTA</h3>
+      <article class="work work-landscape" data-category="period">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 年代敘事｜街頭行動" data-video="animation-03.mp4" data-title="年代敘事｜街頭行動" data-description="以角色對話、街頭動作與夜間場景，展開連續鏡頭的敘事。">
+          <div class="work-image"><img src="animation-03.webp" alt="年代敘事｜街頭行動影片畫面" loading="lazy" width="1280" height="720"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>年代劇情</span><span>1:22</span></div>
+          <h3>年代敘事｜街頭行動</h3>
         </button>
-        <p class="work-description">結合台灣街景、汽車動態與快速剪接，探索遊戲感的影像敘事。</p>
+        <p class="work-description">以角色對話、街頭動作與夜間場景，展開連續鏡頭的敘事。</p>
       </article>
-      <article class="work" data-category="brand">
-        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 企業週轉" data-video="business-credit.mp4" data-title="企業週轉" data-description="將企業情境轉化為短篇敘事，串連角色、事件與資訊節奏。">
-          <div class="work-image"><img src="business-credit.webp" alt="企業週轉影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
-          <div class="work-meta"><span>情境廣告</span><span>0:41</span></div>
-          <h3>企業週轉</h3>
+      <article class="work work-landscape" data-category="period">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 年代敘事｜室內交鋒" data-video="animation-04.mp4" data-title="年代敘事｜室內交鋒" data-description="聚焦人物之間的對話、目光與反應，營造室內場景的戲劇張力。">
+          <div class="work-image"><img src="animation-04.webp" alt="年代敘事｜室內交鋒影片畫面" loading="lazy" width="1280" height="720"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>年代劇情</span><span>1:24</span></div>
+          <h3>年代敘事｜室內交鋒</h3>
         </button>
-        <p class="work-description">將企業情境轉化為短篇敘事，串連角色、事件與資訊節奏。</p>
+        <p class="work-description">聚焦人物之間的對話、目光與反應，營造室內場景的戲劇張力。</p>
       </article>
-      <article class="work" data-category="story">
-        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 自營商花店" data-video="florist.mp4" data-title="自營商花店" data-description="以花店為場景，透過人物表情、生活細節與光影建立情緒。">
-          <div class="work-image"><img src="florist.webp" alt="自營商花店影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
-          <div class="work-meta"><span>劇情短片</span><span>0:35</span></div>
-          <h3>自營商花店</h3>
+      <article class="work work-portrait" data-category="character">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 辦公室裡的對話" data-video="animation-01.mp4" data-title="辦公室裡的對話" data-description="以辦公室人物互動與表情特寫，呈現短篇對話的情緒和節奏。">
+          <div class="work-image"><img src="animation-01.webp" alt="辦公室裡的對話影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>人物短片</span><span>0:22</span></div>
+          <h3>辦公室裡的對話</h3>
         </button>
-        <p class="work-description">以花店為場景，透過人物表情、生活細節與光影建立情緒。</p>
+        <p class="work-description">以辦公室人物互動與表情特寫，呈現短篇對話的情緒和節奏。</p>
       </article>
-      <article class="work" data-category="story">
-        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 劇情片段｜第一級916" data-video="episode-916.mp4" data-title="劇情片段｜第一級916" data-description="以空間、特寫與角色反應組接，營造短篇故事的情緒張力。">
-          <div class="work-image"><img src="episode-916.webp" alt="劇情片段｜第一級916影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
-          <div class="work-meta"><span>情緒敘事</span><span>0:20</span></div>
-          <h3>劇情片段｜第一級916</h3>
+      <article class="work work-portrait" data-category="character">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 人物短片｜情緒獨白" data-video="animation-05.mp4" data-title="人物短片｜情緒獨白" data-description="以近距離鏡頭、人物表情與語氣變化，刻畫對話中的情緒。">
+          <div class="work-image"><img src="animation-05.webp" alt="人物短片｜情緒獨白影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>人物短片</span><span>0:26</span></div>
+          <h3>人物短片｜情緒獨白</h3>
         </button>
-        <p class="work-description">以空間、特寫與角色反應組接，營造短篇故事的情緒張力。</p>
+        <p class="work-description">以近距離鏡頭、人物表情與語氣變化，刻畫對話中的情緒。</p>
       </article>
-      <article class="work" data-category="story">
-        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 年代短劇｜第一集" data-video="episode-one.mp4" data-title="年代短劇｜第一集" data-description="在台灣街景與年代氛圍中，以角色、場景與鏡頭建立敘事。">
-          <div class="work-image"><img src="episode-one.webp" alt="年代短劇｜第一集影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
-          <div class="work-meta"><span>年代敘事</span><span>0:45</span></div>
-          <h3>年代短劇｜第一集</h3>
+      <article class="work work-portrait" data-category="character">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 辦公室裡的默契" data-video="animation-06.mp4" data-title="辦公室裡的默契" data-description="以多人互動、群像反應與節奏轉折，呈現辦公室的幽默片刻。">
+          <div class="work-image"><img src="animation-06.webp" alt="辦公室裡的默契影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>人物短片</span><span>0:12</span></div>
+          <h3>辦公室裡的默契</h3>
         </button>
-        <p class="work-description">在台灣街景與年代氛圍中，以角色、場景與鏡頭建立敘事。</p>
+        <p class="work-description">以多人互動、群像反應與節奏轉折，呈現辦公室的幽默片刻。</p>
+      </article>
+      <article class="work work-portrait" data-category="character">
+        <button class="work-open" type="button" aria-haspopup="dialog" aria-label="播放 人物短片｜朋友之間" data-video="animation-07.mp4" data-title="人物短片｜朋友之間" data-description="以人物對話和表情反差，呈現朋友相處中的幽默與情緒。">
+          <div class="work-image"><img src="animation-07.webp" alt="人物短片｜朋友之間影片畫面" loading="lazy" width="720" height="1280"><span class="play-label">播放作品</span></div>
+          <div class="work-meta"><span>人物短片</span><span>0:17</span></div>
+          <h3>人物短片｜朋友之間</h3>
+        </button>
+        <p class="work-description">以人物對話和表情反差，呈現朋友相處中的幽默與情緒。</p>
       </article>
     </div>
   </section>
