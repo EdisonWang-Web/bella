@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
 
 :root {
   --paper: #fffaf6;
@@ -232,4 +232,51 @@ dialog video { max-height: 72dvh; max-width: 100%; width: auto; margin: auto; ba
 }
 @media print {
   .resume-intro.hero-photo { padding: 0 0 20px; }
+}
+
+/* Bella's deep burgundy identity. */
+:root {
+  --paper: #2b0813;
+  --blush: #350c1b;
+  --rose: #ffffff;
+  --rose-dark: #6f233f;
+  --ink: #ffffff;
+  --muted: #ffffff;
+  --line: rgb(255 255 255 / 24%);
+  --serif: 'Allura', cursive;
+}
+body { background: var(--paper); color: #fff; }
+.site-header { background: rgb(43 8 19 / 97%); }
+.wordmark { font-size: 2.8rem; letter-spacing: 0; }
+.hero h1, .resume-intro h1 { font-family: var(--serif); letter-spacing: 0; }
+.hero h1 { font-size: clamp(7rem, 14vw, 12rem); }
+.wordmark span, .hero h1 span, .hero-photo h1 span, .hero-photo .eyebrow,
+.hero-photo .hero-copy, .hero-photo .resume-subtitle, .hero-photo .text-link,
+.hero-photo .text-link:hover, .about-heading em, .expertise-item p { color: #fff; }
+.hero-photo { color: #fff; }
+.button, .hero-photo .button { background: #651d36; color: #fff; border-color: rgb(255 255 255 / 48%); }
+.button:hover, .hero-photo .button:hover { background: #7e2c48; color: #fff; }
+.filter { color: #fff; }
+.filter[aria-pressed="true"] { background: #6b233d; border-color: #fff; }
+.work-image { background: #401324; }
+.play-label { background: rgb(66 13 32 / 92%); color: #fff; border: 1px solid rgb(255 255 255 / 40%); }
+.about-heading { font-family: var(--sans); font-size: clamp(2rem, 3vw, 3rem); line-height: 1.6; letter-spacing: .02em; font-weight: 500; }
+.about-heading em { font-style: normal; }
+.expertise-item { border-color: var(--line); }
+.resume-body { background: #350c1b; }
+.tools li { background: #461326; border-color: var(--line); }
+.skip-link { background: #651d36; color: white; }
+::selection { background: #8a3453; color: #fff; }
+@media (max-width: 620px) {
+  .wordmark { font-size: 2.5rem; }
+  .hero h1 { font-size: 8rem; }
+  .resume-intro h1 { font-size: 6rem; }
+}
+@media print {
+  :root { --ink: #30242a; --muted: #72545e; --rose: #773147; --line: #dfcdd0; }
+  body, .resume-body { background: white; color: #30242a; }
+  .resume-intro.hero-photo { color: #30242a; }
+  .resume-intro.hero-photo .eyebrow, .resume-intro.hero-photo h1 span { color: #773147; }
+  .resume-intro.hero-photo .resume-subtitle { color: #72545e; }
+  .resume-intro h1 { font-size: 48pt; }
 }
